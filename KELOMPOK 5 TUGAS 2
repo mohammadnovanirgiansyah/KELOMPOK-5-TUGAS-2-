@@ -29,3 +29,15 @@ HURDLE 4
 
 def lompat():
     turn_left()
+move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+    
+while not at_goal():#diulangi selama tidak di goal
+    if wall_in_front():
+        lompat()
+    else:
+        move()
